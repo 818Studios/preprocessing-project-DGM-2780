@@ -130,6 +130,7 @@ table {
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 *,
 *:before,
@@ -147,14 +148,39 @@ body .header-navWrapper {
 body header {
   background-color: #FFF;
   height: 30px;
+  max-width: 940px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
 }
 body nav {
   background-color: #FFF;
   height: 40px;
-  max-width: 1035px;
+  max-width: 940px;
   margin: 0 auto;
+  font-size: 1.5rem;
   display: flex;
   justify-content: space-between;
+}
+body nav #logo {
+  font-family: 'Courgette', cursive;
+  font-size: 2.5rem;
+}
+body nav #logo-sm {
+  font-family: 'Courgette', cursive;
+  font-size: 1.5rem;
+}
+body header a,
+body nav a {
+  text-decoration: none;
+  list-style: none;
+  align-self: center;
+}
+body .header-navWrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .fa-spin {
   animation: fa-spin 2s infinite linear;

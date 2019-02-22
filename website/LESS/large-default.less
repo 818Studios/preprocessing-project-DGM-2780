@@ -3,7 +3,10 @@
 html {
 	box-sizing: border-box;
 	font-size: @defaultFontSize;
+	font-family: 'Roboto Condensed', sans-serif;
+
 }
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
@@ -21,18 +24,46 @@ body{
 	header{
 		background-color: @whiteBkg;
 		height: 30px;
+		max-width: 940px;
+		margin: 0 auto;
+		font-size: 1.2rem;
+		.flexCentered();
+		
 
 	} //end header
 
 	nav{
 		background-color: @whiteBkg;
 		height: 40px;
-
-		max-width: 1035px;
+		max-width: 940px;
 		margin: 0 auto;
+		font-size: 1.5rem;
 		.flexCentered();
+		
+
+		#logo{
+			font-family: 'Courgette', cursive;
+			font-size: 2.5rem;
+		}
+
+		#logo-sm{
+			font-family: 'Courgette', cursive;
+			font-size: 1.5rem;
+		}
 	
 	}//end nav
 
+
+	header a, nav a{
+		.linkStyle();
+		align-self: center;
+	}
+
+.header-navWrapper{
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+	
 
 }
