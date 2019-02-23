@@ -15,10 +15,14 @@ html {
 body{
 	background-color: lightblue;
 
-	.header-navWrapper{
+	section.header-navWrapper{
 		background-color: @whiteBkg;
 		height: 70px;
 		box-shadow: 0 .25rem 2px #AAAAAA;
+		z-index: 4;
+		position: fixed;
+		top: 0;
+		width: 100%;
 	}
 
 	header{
@@ -29,6 +33,13 @@ body{
 		font-size: 1.2rem;
 		.flexCentered();
 		
+
+	header a, nav a{
+		.linkStyle();
+		align-self: center;
+	}
+	
+
 
 	} //end header
 
@@ -53,17 +64,28 @@ body{
 	
 	}//end nav
 
+	section.scheduleNow{
+		.flexCentered();
+		background-color: @whiteBkg;
+		max-width: 1340px;
+		height: 60px;
+		position: relative;
+		top: 70px;
+		z-index: 1;
+		margin: 0 2em;
+		color: @disneyBlue;
+		font-size: 1.5rem;
+		align-items: center;
+		padding: @edge;
 
-	header a, nav a{
-		.linkStyle();
-		align-self: center;
+	
+		
 	}
 
-.header-navWrapper{
-	position: fixed;
-	top: 0;
-	width: 100%;
+main{
+	background-image{}
 }
+
 	
 
 }
