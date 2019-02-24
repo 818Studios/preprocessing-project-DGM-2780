@@ -252,6 +252,12 @@ body div.underHeader .build-your-experience .numAdults .far-minus-circle,
 body div.underHeader .build-your-experience .numChild .far-minus-circle {
   margin-left: 1.5em;
 }
+body div.underHeader .build-your-experience .numAdults .btnFindSpa,
+body div.underHeader .build-your-experience .numChild .btnFindSpa {
+  border-radius: 10px;
+  color: #58831b;
+  background-color: #FFF;
+}
 body main {
   max-width: 1300px;
   margin: 0 auto;
