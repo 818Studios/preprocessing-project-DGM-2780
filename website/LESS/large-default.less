@@ -20,7 +20,8 @@ body{
 		height: 70px;
 		box-shadow: 0 .25rem 2px #AAAAAA;
 		z-index: 4;
-		position: fixed;
+		position:sticky, -webkit-sticky;
+
 		top: 0;
 		width: 100%;
 	}
@@ -69,10 +70,10 @@ body{
 		background-color: @whiteBkg;
 		max-width: 1340px;
 		height: 60px;
-		position: relative;
+		position: static;
 		top: 70px;
 		z-index: 1;
-		margin: 0 2em;
+		margin: 0 auto;
 		color: @disneyBlue;
 		font-size: 1.5rem;
 		align-items: center;
@@ -82,9 +83,14 @@ body{
 		
 	}
 
-main{
-	background-image{}
-}
+	div.underHeader{
+		background-image: url(../Images/lotusHero1600.jpg);
+		background-size: cover;
+	}
+
+// main{
+// 	background-image{}
+// }
 
 	
 
