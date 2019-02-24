@@ -2,24 +2,50 @@
 @defaultFontSize: 62.5%;
 @edge: 2%;
 
-//Colors 
+//Base Colors 
 @disneyBlue: #0470ab; 
 @darkenedBlue: darken(@disneyBlue, 50%);
 @whiteBkg: #FFF;
+@grassGreen: #58831b;
+@stdRadius: 10px;
 
 
-//Mixins 
-
-//Displays content as flex, centers content and adds a centering margin.
-.flexCentered{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-  }
+//Color References
+    //Find Spa Button
+    @btnSpaFinder: @grassGreen;
+    @btnTxtColor: @whiteBkg;
+    @btnBordRadius: @stdRadius;
 
 
-  .linkStyle{
-      text-decoration: none;
-      list-style: none;
-      
-  }
+
+//===================== Mixins ======================== // 
+
+    //Displays content as flex, centers content and adds a centering margin.
+    
+        //Centers items in a flex row
+        .flexCentered{
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            align-items: center;
+        }
+
+        //Removes underlines and other decorations that come with links
+        .linkStyle{
+            text-decoration: none;
+            
+            
+        }
+
+
+        //Mixin to create the Find Spas button
+        .btnFindSpa(@btnSpaFinder, @stdRadius, @btnTxtColor){
+            border-radius: @btnBordRadius;
+            color: @btnTxtColor;
+            background-color: @btnSpaFinder;
+        }
+
+
+
+
+// =================== End Mixins =======================//

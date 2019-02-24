@@ -130,10 +130,10 @@ table {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  align-items: center;
 }
 .linkStyle {
   text-decoration: none;
-  list-style: none;
 }
 /* Start your code here: */
 html {
@@ -147,7 +147,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  background-color: lightblue;
+  background-color: #FFF;
 }
 body section.header-navWrapper {
   background-color: #FFF;
@@ -166,11 +166,10 @@ body header {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  align-items: center;
 }
-body header header a,
-body header nav a {
+body a {
   text-decoration: none;
-  list-style: none;
   align-self: center;
 }
 body nav {
@@ -181,6 +180,7 @@ body nav {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  align-items: center;
 }
 body nav #logo {
   font-family: 'Courgette', cursive;
@@ -205,9 +205,56 @@ body section.scheduleNow {
   align-items: center;
   padding: 2%;
 }
+body i {
+  margin: 0 1em;
+  width: 1.5em;
+  height: auto;
+}
 body div.underHeader {
-  background-image: url(../Images/lotusHero1600.jpg);
-  background-size: cover;
+  background-image: url(../Images/lotusHero.jpg);
+  width: 100vw;
+  height: 65rem;
+  position: absolute;
+  z-index: -1;
+  font-size: 2rem;
+}
+body div.underHeader .build-your-experience {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+body div.underHeader .build-your-experience #checkIn,
+body div.underHeader .build-your-experience #checkOut {
+  width: 5em;
+}
+body div.underHeader .build-your-experience #accessibleRms {
+  font-size: 1.2em;
+}
+body div.underHeader .build-your-experience input {
+  border: none;
+  border-bottom: 2px #0470ab solid;
+  margin-left: 1em;
+  font-size: 1.5em;
+}
+body div.underHeader .build-your-experience .numAdults,
+body div.underHeader .build-your-experience .numChild {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+body div.underHeader .build-your-experience .numAdults input,
+body div.underHeader .build-your-experience .numChild input {
+  margin-left: 0;
+  width: 2em;
+}
+body div.underHeader .build-your-experience .numAdults .far-minus-circle,
+body div.underHeader .build-your-experience .numChild .far-minus-circle {
+  margin-left: 1.5em;
+}
+body main {
+  max-width: 1300px;
+  margin: 0 auto;
 }
 .fa-spin {
   animation: fa-spin 2s infinite linear;

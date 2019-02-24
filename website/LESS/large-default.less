@@ -13,7 +13,7 @@ html {
 
 
 body{
-	background-color: lightblue;
+	background-color: @whiteBkg;
 
 	section.header-navWrapper{
 		background-color: @whiteBkg;
@@ -35,14 +35,14 @@ body{
 		.flexCentered();
 		
 
-	header a, nav a{
+	}//end header
+	
+	a{
 		.linkStyle();
 		align-self: center;
-	}
-	
 
 
-	} //end header
+	} 
 
 	nav{
 		background-color: @whiteBkg;
@@ -83,15 +83,81 @@ body{
 		
 	}
 
-	div.underHeader{
-		background-image: url(../Images/lotusHero1600.jpg);
-		background-size: cover;
+	i{
+		margin: 0 1em;
+		width: 1.5em;
+		height: auto;
 	}
 
-// main{
-// 	background-image{}
-// }
+
+	div.underHeader{
+		// Photo by Jay Castor on Unsplash
+		background-image: url(../Images/lotusHero.jpg);
+		width: 100vw;
+		height: 65rem;
+		position: absolute;
+		z-index: -1;
+		font-size: 2rem;
+
+			
+
+		
+		
+		
+
+		.build-your-experience{
+			.flexCentered();
+			
+			
+			#checkIn, #checkOut{
+				width: 5em;
+			}
+
+			#accessibleRms{
+				font-size: 1.2em;
+			}
+
+
+			input{
+				border: none;
+				border-bottom: 2px @disneyBlue solid;
+				margin-left: 1em;
+				font-size: 1.5em;
+
+			}
+
+			.numAdults, .numChild{
+				display: flex;
+				flex-wrap: wrap;
+				align-content: space-between;
+
+				input{
+					margin-left: 0;
+					width: 2em;
+				}
+
+				.far-minus-circle{
+					margin-left: 1.5em;
+				}
+
+				.btnFindSpa{
+					.btnFindSpa();
+				}//end .btnFindSpa
+
+
+			} //end .numAdults, .numChild
+
+		} //end .build-your-experience
+
+	} //end div.underHeader
+
+	main{
+		max-width: 1300px;
+		margin: 0 auto;	
+
+
+	} //End Main
 
 	
 
-}
+} //end Body
