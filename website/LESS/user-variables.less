@@ -18,34 +18,3 @@
 
 
 
-//===================== Mixins ======================== // 
-
-    //Displays content as flex, centers content and adds a centering margin.
-    
-        //Centers items in a flex row
-        .flexCentered{
-            display: flex;
-            justify-content: space-between;
-            margin: 0 auto;
-            align-items: center;
-        }
-
-        //Removes underlines and other decorations that come with links
-        .linkStyle{
-            text-decoration: none;
-            
-            
-        }
-
-
-        //Mixin to create the Find Spas button
-        .btnFindSpa(@btnSpaFinder, @btnBorderRadius, @btnTxtColor){
-            border-radius: @btnBordRadius;
-            color: @btnTxtColor;
-            background-color: @btnSpaFinder;
-        }
-
-
-
-
-// =================== End Mixins =======================//
