@@ -233,14 +233,18 @@ body div.underHeader .build-your-experience .numAdults .far-minus-circle,
 body div.underHeader .build-your-experience .numChild .far-minus-circle {
   margin-left: 1.5em;
 }
+body div.underHeader .btnFindSpa {
+  border-radius: 2px;
+  color: #FFF;
+  background-color: #58831b;
+  padding: 1rem 2rem;
+  margin-left: 1rem;
+  border: none;
+  font-size: 1.5rem;
+}
 body main {
   max-width: 1300px;
   margin: 0 auto;
-}
-.btnFindSpa {
-  border-radius: 10px;
-  color: #58831b;
-  background-color: red;
 }
 header {
   background-color: #FFF;
