@@ -129,9 +129,7 @@ body{
 					margin-left: 1.5em;
 				}
 
-				.btnFindSpa{
-					.btnFindSpa(@whiteBkg, @stdRadius, @grassGreen);
-				}//end .btnFindSpa
+
 
 
 			} //end .numAdults, .numChild
@@ -150,3 +148,8 @@ body{
 	
 
 } //end Body
+
+//FIX NESTING FOR THE BUTTON!!!
+.btnFindSpa{
+	.btnMaker(red, @stdRadius, @grassGreen);
+}//end .btnFindSpa
