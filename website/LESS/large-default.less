@@ -188,12 +188,42 @@ body{
 			section.specialOffer {
 				display: flex;
 				flex-direction: column;
+				justify-content: flex-start;
 				max-width: 435px;
 
 
-				p{
-					max-width: 435px;
+				h2{
+					margin: 0 35px;
 				}
+
+				p{
+					max-width: 365px;
+					margin: 1em auto;
+					font-size: @lgText;
+				}
+
+				button.primary {
+					.btnMaker(@disneyBlue, @stdRadius, @whiteBkg);
+					margin: 1.5rem 35px;
+					padding: 1.25rem 4rem;
+					font-size: @lgText;
+					max-width: 290px;
+					
+
+
+				}
+
+
+				button.primary-inverse{
+					.btnMaker(@whiteBkg, @stdRadius, @disneyBlue);
+					margin: 0 35px 1.75rem 35px;
+					padding: 1.25rem 4rem;
+					font-size: @lgText;
+					max-width: 290px;
+					border: 2px @disneyBlue solid;
+				}
+
+
 
 			}
 
@@ -204,6 +234,8 @@ body{
 			}
 
 
+
+
 		}
 
 
@@ -212,6 +244,3 @@ body{
 
 
 } //end Body
-
-//FIX NESTING FOR THE BUTTON!!!
-	

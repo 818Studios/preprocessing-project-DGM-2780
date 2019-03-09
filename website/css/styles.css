@@ -234,7 +234,7 @@ body div.underHeader .build-your-experience .numChild .far-minus-circle {
   margin-left: 1.5em;
 }
 body div.underHeader .btnFindSpa {
-  border-radius: 2px;
+  border-radius: 5px;
   color: #FFF;
   background-color: #58831b;
   padding: 1rem 2rem;
@@ -271,10 +271,37 @@ body main section img#twoThirdsImg {
 body main section section.specialOffer {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   max-width: 435px;
 }
+body main section section.specialOffer h2 {
+  margin: 0 35px;
+}
 body main section section.specialOffer p {
-  max-width: 435px;
+  max-width: 365px;
+  margin: 1em auto;
+  font-size: 2.5rem;
+}
+body main section section.specialOffer button.primary {
+  border-radius: 5px;
+  color: #FFF;
+  background-color: #0470ab;
+  border: none;
+  margin: 1.5rem 35px;
+  padding: 1.25rem 4rem;
+  font-size: 2.5rem;
+  max-width: 290px;
+}
+body main section section.specialOffer button.primary-inverse {
+  border-radius: 5px;
+  color: #0470ab;
+  background-color: #FFF;
+  border: none;
+  margin: 0 35px 1.75rem 35px;
+  padding: 1.25rem 4rem;
+  font-size: 2.5rem;
+  max-width: 290px;
+  border: 2px #0470ab solid;
 }
 body main section img {
   flex-basis: 1;
