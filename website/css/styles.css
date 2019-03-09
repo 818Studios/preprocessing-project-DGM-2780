@@ -250,7 +250,6 @@ body main {
   max-width: 1305px;
   top: 650px;
   margin: 0 auto;
-  border: 1px red dotted;
 }
 body main h2 {
   font-size: 4rem;
@@ -258,6 +257,7 @@ body main h2 {
 }
 body main div.offersDiv {
   background-color: #FFF;
+  margin-top: 4rem;
 }
 body main section {
   display: flex;
@@ -317,7 +317,32 @@ body main section img {
 }
 body main div.before-footer {
   display: flex;
+  margin-top: 2rem;
   max-width: 1307px;
+  font-size: 2.5rem;
+  padding: 0 5rem;
+}
+body main div.related {
+  display: flex;
+  background-color: #edf8ff;
+  padding: 1rem 5rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+body main div.related section {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+body main div.related section a {
+  padding: 1rem 0;
+  font-size: 2rem;
+  color: #000000;
+}
+body footer {
+  position: relative;
+  bottom: -700px;
+  text-align: center;
   font-size: 2.5rem;
 }
 header {

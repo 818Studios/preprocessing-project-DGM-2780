@@ -156,7 +156,7 @@ body{
 		max-width: 1305px;
 		top: 650px;
 		margin: 0 auto;	
-		border: 1px red dotted;
+
 
 
 
@@ -167,8 +167,8 @@ body{
 		}
 
 		div.offersDiv{
-			// display: flex;
 			background-color: @whiteBkg;
+			margin-top: 4rem; 
 			
 		}
 
@@ -194,6 +194,8 @@ body{
 				flex-grow: 3;
 				max-width: 1305px;
 			}
+
+
 
 			section.specialOffer {
 				display: flex;
@@ -235,7 +237,11 @@ body{
 
 
 
-			}
+			}//end section.specialOffer
+
+
+
+
 
 			img{
 				flex-basis: 1;
@@ -252,9 +258,10 @@ body{
 
 		div.before-footer{
 			display: flex;
+			margin-top: 2rem;
 			max-width: 1307px;
 			font-size: @lgText;
-
+			padding: 0 5rem;
 
 
 
@@ -262,8 +269,40 @@ body{
 		}//end div.before-footer
 
 
+		div.related{
+			display: flex;
+			background-color: lighten(@disneyBlue, 62%);
+			padding: 1rem 5rem;
+			border-bottom-left-radius: 20px;
+			border-bottom-right-radius: 20px;
+
+			section{
+				display: flex;
+				flex-direction: column;
+				align-content: flex-start;
+
+
+				a{
+					padding: 1rem 0;
+					font-size: 2rem;
+					color: #000000;
+				}
+
+			}
+
+
+		}//End div.related
+
 	} //End Main
 
+
+	footer{
+		position: relative;
+		bottom: -700px; //I'll be honest -- I cannot comprehend why the 'bottom' is above the bottom of the actual content.
+		text-align: center;
+		font-size: @lgText;
+
+	}//End Footer
 
 
 } //end Body
