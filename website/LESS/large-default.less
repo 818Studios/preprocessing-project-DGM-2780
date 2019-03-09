@@ -26,6 +26,7 @@ body{
 		width: 100%;
 	}
 	
+
 	a{
 		.linkStyle();
 		align-self: center;
@@ -33,6 +34,7 @@ body{
 
 	} 
 
+	
 	nav{
 		background-color: @whiteBkg;
 		height: 40px;
@@ -145,8 +147,64 @@ body{
 	} //end div.underHeader
 
 	main{
-		max-width: 1300px;
+		position: relative;
+		max-width: 1305px;
+		top: 650px;
 		margin: 0 auto;	
+		border: 1px red dotted;
+
+
+
+		h2{
+			font-size: 4rem;
+			padding: 4rem 0 2rem 0;
+
+		}
+
+		div.offersDiv{
+			// display: flex;
+			background-color: @whiteBkg;
+			
+		}
+
+
+
+
+		section{
+			display: flex;
+			max-width: 1305px;
+			width: 1305px;
+			flex-direction: row;
+			flex-wrap: wrap;
+
+			img#twoThirdsImg{
+				flex-grow: 2;
+				max-width: 870px;
+				
+				max-height: 435px; 
+				
+			}
+
+			section.specialOffer {
+				display: flex;
+				flex-direction: column;
+				max-width: 435px;
+
+
+				p{
+					max-width: 435px;
+				}
+
+			}
+
+			img{
+				flex-basis: 1;
+				max-width: 435px;
+				max-height: 435px;
+			}
+
+
+		}
 
 
 	} //End Main
