@@ -5,6 +5,11 @@ html {
 	font-size: @defaultFontSize;
 	font-family: 'Roboto Condensed', sans-serif;
 
+
+	hr{
+		margin: 2.5rem auto;
+	}
+
 }
 
 *, *:before, *:after {
@@ -185,6 +190,11 @@ body{
 				
 			}
 
+			img#fullWidthImg{
+				flex-grow: 3;
+				max-width: 1305px;
+			}
+
 			section.specialOffer {
 				display: flex;
 				flex-direction: column;
@@ -237,6 +247,19 @@ body{
 
 
 		}
+
+
+
+		div.before-footer{
+			display: flex;
+			max-width: 1307px;
+			font-size: @lgText;
+
+
+
+
+
+		}//end div.before-footer
 
 
 	} //End Main

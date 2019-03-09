@@ -132,6 +132,9 @@ html {
   font-size: 62.5%;
   font-family: 'Roboto Condensed', sans-serif;
 }
+html hr {
+  margin: 2.5rem auto;
+}
 *,
 *:before,
 *:after {
@@ -268,6 +271,10 @@ body main section img#twoThirdsImg {
   max-width: 870px;
   max-height: 435px;
 }
+body main section img#fullWidthImg {
+  flex-grow: 3;
+  max-width: 1305px;
+}
 body main section section.specialOffer {
   display: flex;
   flex-direction: column;
@@ -307,6 +314,11 @@ body main section img {
   flex-basis: 1;
   max-width: 435px;
   max-height: 435px;
+}
+body main div.before-footer {
+  display: flex;
+  max-width: 1307px;
+  font-size: 2.5rem;
 }
 header {
   background-color: #FFF;
