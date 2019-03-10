@@ -2,6 +2,61 @@
 
 
 
+html{
 
-    
+    max-width: 435px;
+
+
+    div.underHeader{
+        background-image: url(../Images/lotuHero560.jpg);
+        background-repeat: no-repeat;
+        max-height: 435px;
+        border: 1px red dotted;
+
+    }
+
+    main{
+        top: 435px;
+
+        div.checkIn{
+            display: initial;
+        }
+
+        
+        div.checkIn button{
+            width: 80%;
+            margin: 0 5%;
+        }
+
+        div img{
+            display: none;
+        }
+
+        div img.showMobileImg{
+            display: inherit;
+            max-width: 500px;
+            min-width: 500px;
+            height: auto;
+        }
+
+
+        div.before-footer, div.related, hr{
+            display: none;
+        }
+
+
+        div.offersDiv section{
+            height: auto;
+            flex-direction: column;
+        }
+
+
+
+    }
+
+
+}
+
+
+
 }//end phone media query

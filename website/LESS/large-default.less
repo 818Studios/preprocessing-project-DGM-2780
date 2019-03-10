@@ -161,7 +161,9 @@ body{
 		margin: 0 auto;	
 
 
-
+		div.checkIn {
+			display: none;
+		}
 
 		h2{
 			font-size: 4rem;
@@ -175,7 +177,16 @@ body{
 			
 		}
 
+		button.primary {
+			.btnMaker(@disneyBlue, @stdRadius, @whiteBkg);
+			margin: 1.5rem 35px;
+			padding: 1.25rem 4rem;
+			font-size: @lgText;
+			max-width: 290px;
+			
 
+
+		}
 
 
 		section{
@@ -217,16 +228,7 @@ body{
 					font-size: @lgText;
 				}
 
-				button.primary {
-					.btnMaker(@disneyBlue, @stdRadius, @whiteBkg);
-					margin: 1.5rem 35px;
-					padding: 1.25rem 4rem;
-					font-size: @lgText;
-					max-width: 290px;
-					
 
-
-				}
 
 
 				button.primary-inverse{
@@ -307,5 +309,8 @@ body{
 
 	}//End Footer
 
+.mobileNav{
+	display: none;
+}	
 
 } //end Body

@@ -1,0 +1,79 @@
+/* Start your code here: */
+
+html {
+	box-sizing: border-box;
+	font-size: @defaultFontSize;
+	font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+body{
+	background-image: linear-gradient(@whiteBkg, @disneyBlue);
+	background-image: -moz-linear-gradient(@whiteBkg, @disneyBlue);
+	height: 100vh;
+
+
+
+
+	section.header-navWrapper{
+		background-color: @whiteBkg;
+		height: 70px;
+		box-shadow: 0 .25rem 2px #AAAAAA;
+		z-index: 4;
+		position:sticky, -webkit-sticky;
+
+		top: 0;
+		width: 100%;
+	}
+	
+
+	a{
+		.linkStyle();
+		align-self: center;
+
+
+	} 
+
+	
+	nav{
+		background-color: @whiteBkg;
+		height: 40px;
+		max-width: 940px;
+		margin: 0 auto;
+		font-size: 1.5rem;
+		.flexCentered();
+		
+		*.mobileNav{
+			display: none;
+		}
+
+		#logo{
+			font-family: 'Courgette', cursive;
+			font-size: 2.5rem;
+		}
+
+		#logo-sm{
+			font-family: 'Courgette', cursive;
+			font-size: 1.5rem;
+		}
+	
+	}//end nav
+
+	
+
+
+	footer{
+		position: relative;
+		bottom: -700px; //I'll be honest -- I cannot comprehend why the 'bottom' is above the bottom of the actual content.
+		text-align: center;
+		font-size: @lgText;
+
+	}//End Footer
+
+
+} //end Body
