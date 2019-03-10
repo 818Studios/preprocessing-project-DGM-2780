@@ -20,6 +20,7 @@ body{
 
 
 
+
 	section.header-navWrapper{
 		background-color: @whiteBkg;
 		height: 70px;
@@ -44,7 +45,7 @@ body{
 		background-color: @whiteBkg;
 		height: 40px;
 		max-width: 940px;
-		margin: 0 auto;
+		margin: auto;
 		font-size: 1.5rem;
 		.flexCentered();
 		
@@ -64,14 +65,129 @@ body{
 	
 	}//end nav
 
-	
+	main{
+		justify-content: center;
+		margin: auto;
 
+
+
+
+
+		h1{
+			font-size: 4rem;
+			text-align: center;
+			margin-top: 5rem;
+			
+		}
+
+
+		.logo{
+			font-family: 'Courgette', cursive;
+
+		}
+
+		div.profile{
+			max-width: 560px;
+			background-color: @whiteBkg;
+			border-radius: 10px;
+			padding: 2rem;
+			margin: 2rem auto;
+			
+
+			section.cardTitle{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				font-size: 2.0rem;
+			}
+		
+
+			form{
+				max-width: 540px;
+				display: flex;
+				flex-wrap: wrap;
+				
+				input{
+					border-radius: 5px;
+					padding: .5rem;
+					// margin: 2rem 1rem 2rem 0;
+					margin: 2rem auto;
+				}
+
+			}
+
+
+			section.underForm{
+				display: flex;
+				justify-content: space-evenly;
+
+				label{
+					font-size: 1.25rem;
+					display: initial;
+				}
+	
+	
+				
+				button.primary-inverse{
+					.btnMaker(@whiteBkg, @rounded, @disneyBlue);
+					padding: 1.25rem 4rem;
+					font-size: 1.5rem;
+					max-width: 290px;
+					border: 2px @disneyBlue solid;
+				}
+	
+	
+				.btnFindSpa{
+					.btnMaker(@grassGreen, @rounded, @whiteBkg);
+					padding: 1.25rem 4rem;
+					border: none;
+					font-size: 1.5rem;
+				}//end .btnFindSpa
+
+			}
+
+			hr{
+				margin: 1.5rem 0;
+			}
+
+			h2{
+				font-size: @lgText;
+				margin-bottom: 1.5rem;				
+			}
+
+			a{
+				text-decoration: none;
+				color:  black;
+			}
+
+		}
+
+
+
+
+	}
+
+
+	div.preFooter{
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		max-width: 940px;
+		flex-wrap: wrap;
+
+
+		a{
+			font-size: @medText;
+			color: black;
+			text-decoration: none;
+		}
+	}
 
 	footer{
-		position: relative;
-		bottom: -700px; //I'll be honest -- I cannot comprehend why the 'bottom' is above the bottom of the actual content.
+		margin-top: 2rem;
 		text-align: center;
-		font-size: @lgText;
+		font-size: @medText;
 
 	}//End Footer
 

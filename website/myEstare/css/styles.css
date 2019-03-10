@@ -159,6 +159,7 @@ body nav {
   background-color: #FFF;
   height: 40px;
   max-width: 940px;
+  margin: auto;
   font-size: 1.5rem;
   display: flex;
   justify-content: space-between;
@@ -176,42 +177,95 @@ body nav #logo-sm {
   font-family: 'Courgette', cursive;
   font-size: 1.5rem;
 }
-body footer {
-  position: relative;
-  bottom: -700px;
-  text-align: center;
-  font-size: 2.5rem;
+body main {
+  justify-content: center;
+  margin: auto;
 }
-@media (max-width: 1220px) {
-  * {
-    position: initial;
-  }
-  html header {
-    display: none;
-  }
-  html body {
-    max-width: 1220px;
-    display: flex;
-    flex-direction: column;
-  }
-  html body nav {
-    display: flex;
-    margin-top: 1.75rem;
-  }
-  html body nav a {
-    display: none;
-  }
-  html body nav a#logo {
-    display: block;
-  }
-  html body div.underHeader {
-    background-image: url(../Images/lotusHero800.jpg);
-    background-size: 150%;
-  }
-  html body div.underHeader section {
-    display: none;
-    max-width: 100%;
-  }
+body main h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+body main .logo {
+  font-family: 'Courgette', cursive;
+}
+body main div.profile {
+  max-width: 560px;
+  background-color: #FFF;
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 2rem auto;
+}
+body main div.profile section.cardTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+body main div.profile form {
+  max-width: 540px;
+  display: flex;
+  flex-wrap: wrap;
+}
+body main div.profile form input {
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin: 2rem auto;
+}
+body main div.profile section.underForm {
+  display: flex;
+  justify-content: space-evenly;
+}
+body main div.profile section.underForm label {
+  font-size: 1.25rem;
+  display: initial;
+}
+body main div.profile section.underForm button.primary-inverse {
+  border-radius: 50px;
+  color: #0470ab;
+  background-color: #FFF;
+  border: none;
+  padding: 1.25rem 4rem;
+  font-size: 1.5rem;
+  max-width: 290px;
+  border: 2px #0470ab solid;
+}
+body main div.profile section.underForm .btnFindSpa {
+  border-radius: 50px;
+  color: #FFF;
+  background-color: #58831b;
+  padding: 1.25rem 4rem;
+  border: none;
+  font-size: 1.5rem;
+}
+body main div.profile hr {
+  margin: 1.5rem 0;
+}
+body main div.profile h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+body main div.profile a {
+  text-decoration: none;
+  color: black;
+}
+body div.preFooter {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  max-width: 940px;
+  flex-wrap: wrap;
+}
+body div.preFooter a {
+  font-size: 1.25rem;
+  color: black;
+  text-decoration: none;
+}
+body footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.25rem;
 }
 header {
   background-color: #FFF;
