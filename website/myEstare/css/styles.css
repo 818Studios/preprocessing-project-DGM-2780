@@ -267,6 +267,25 @@ body footer {
   text-align: center;
   font-size: 1.25rem;
 }
+@media (max-width: 500px) {
+  html header {
+    display: none;
+  }
+  html nav {
+    display: Flex;
+    justify-content: space-between;
+  }
+  html nav a {
+    display: none;
+  }
+  html nav .mobileNav {
+    display: initial;
+    margin: 2rem 2rem 0 2rem;
+  }
+  html div.preFooter {
+    display: none;
+  }
+}
 header {
   background-color: #FFF;
   height: 30px;
